@@ -1,0 +1,964 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>YUSUF — Portofolio Kreatif | Pencerita Visual &amp; Spesialis Motion</title>
+<!-- Google Fonts: Plus Jakarta Sans & Syne -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 CDN with forms & container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#6B1124',
+              blueDark: '#4A0D1B',
+              blueLight: '#ff4d79',
+              accent: '#ff6b8b',
+              obsidian: '#090a0d',
+              surface: '#111318',
+              surfaceHover: '#181b22',
+              border: '#242833'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', '"Plus Jakarta Sans"', 'sans-serif']
+          },
+          keyframes: {
+            spinSlow: {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' }
+            },
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' }
+            }
+          },
+          animation: {
+            'spin-slow': 'spinSlow 20s linear infinite',
+            'float-slow': 'floatSlow 4s ease-in-out infinite'
+          }
+        }
+      }
+    };
+  </script>
+<!-- Custom Styles for Typography & Smooth Transitions -->
+<style data-purpose="typography-and-effects">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #090a0d;
+      color: #f1f5f9;
+      overflow-x: hidden;
+    }
+
+    /* Giant responsive studio typography */
+    .kale-display-text {
+      font-size: clamp(5.5rem, 17vw, 19.5rem);
+      line-height: 0.88;
+      letter-spacing: -0.05em;
+    }
+
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090a0d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #6B1124;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #85162D;
+    }
+
+    /* Vertical studio badge label */
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+
+    /* Dynamic Filter transitions */
+    .works-group {
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .works-group.fade-out {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    .works-group.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="selection:bg-brand-blue selection:text-white">
+<!-- BEGIN: StickyNavigation -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-brand-obsidian/80 border-b border-white/10" id="site-nav">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Studio Logo -->
+<a class="flex items-center gap-3 group" data-purpose="brand-logo" href="#"><div class="flex items-baseline font-display font-extrabold tracking-tight text-[#ff2a4d] text-3xl" style="color: rgb(255, 42, 77);">yusuf</div><span class="text-white/30 text-lg font-light">|</span><span class="text-xs uppercase tracking-[0.28em] text-white/80 font-bold group-hover:text-brand-blueLight transition-colors">PORTFOLIO</span></a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-white/80" data-purpose="desktop-nav"><a class="hover:text-white transition-colors duration-200" href="#selected-work">Karya Terpilih</a>
+<a class="hover:text-white transition-colors duration-200" href="#studio-about">Tentang &amp; Pengalaman</a>
+<a class="hover:text-white transition-colors duration-200" href="#skills-experience">Keahlian &amp; Toolset</a>
+<a class="hover:text-white transition-colors duration-200" href="#contact">Kontak</a></nav>
+<!-- Action Button -->
+<div class="flex items-center gap-4"><a class="hidden sm:inline-flex px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white border border-white/20 hover:border-white hover:bg-white/10 transition-all duration-200" download="" href="#contact">
+          Resume / CV
+        </a>
+<a class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-blue text-white shadow-lg shadow-brand-blue/30 hover:bg-[#85162D] transition-all duration-200 hover:scale-[1.02]" href="#contact">
+          Hubungi Saya
+        </a></div>
+</div>
+</header>
+<!-- END: StickyNavigation -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-24 pb-20 bg-brand-blue text-white overflow-hidden" data-purpose="hero-section" style="background: linear-gradient(135deg, rgb(74, 13, 27) 0%, rgb(107, 17, 36) 45%, rgb(59, 8, 20) 100%);">
+<!-- Background Ambient Aura -->
+<div class="absolute inset-0 bg-radial-gradient from-blue-400/20 via-transparent to-transparent pointer-events-none" style="background: radial-gradient(circle at 50% 30%, rgba(127, 29, 53, 0.35) 0%, rgba(74, 13, 27, 0.25) 35%, transparent 70%);"></div>
+<div class="max-w-7xl mx-auto px-6 pt-6">
+<!-- Hero Meta Bar -->
+<div class="flex items-center justify-between text-xs font-bold uppercase tracking-[0.2em] text-white/85 border-b border-white/25 pb-4 mb-6" data-purpose="hero-meta"><div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">TERSEDIA UNTUK POSISI FULL-TIME &amp; PROYEK KREATIF</span>
+</div>
+<div class="hidden sm:block tracking-[0.25em]">
+            MOTION · VIDEO · ART DIRECTION
+          </div></div>
+<!-- Giant 'kale *' Showcase -->
+<div class="relative py-2 sm:py-6 flex items-baseline justify-between select-none">
+<h1 class="kale-display-text font-black font-display tracking-tighter flex items-center text-white">yusuf <span aria-hidden="true" class="inline-block ml-4 sm:ml-8 font-light text-white text-[0.65em] animate-spin-slow origin-center">✱</span></h1>
+<!-- Vertical Studio Label -->
+</div>
+<!-- Divider Line -->
+<div class="w-full h-px bg-white/25 mt-4 mb-10"></div>
+<!-- Subheading & Action Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16"><div class="lg:col-span-7">
+<h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.08]">
+              Pencerita Visual &amp;<br>
+<span class="text-white/80 font-bold">Spesialis Motion.</span>
+</h2>
+</div>
+<div class="lg:col-span-5 flex flex-col items-start lg:items-end justify-between space-y-6">
+<p class="text-base sm:text-lg text-white/90 max-w-sm lg:text-right font-medium">
+              Membuat video pendek berdampak tinggi, fotografi komersial, dan visual brand yang meningkatkan nilai brand. Siap berkontribusi untuk posisi kreatif full-time dan berorientasi hasil.
+            </p>
+<div class="flex flex-col sm:flex-row w-full sm:w-auto gap-3 sm:gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full bg-brand-obsidian text-white font-semibold text-sm hover:bg-black transition-all shadow-xl hover:scale-105 text-center" data-purpose="hero-cta" href="#selected-work">
+<span class="">Lihat Karya Terpilih</span>
+<span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs">↓</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 sm:py-4 rounded-full border border-white/40 text-white font-semibold text-sm hover:bg-white/10 transition-colors text-center" download="" href="#contact">
+Unduh Resume (PDF)
+</a>
+</div>
+</div></div>
+<!-- Reel Previews Row (Hero Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4" data-purpose="hero-featured-cards">
+<!-- Card 1: Photography -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('photo')">
+<img alt="Fotografi Produk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0omY2ikPcOnaBRUZHMwOo1KMEDLQdU4WIjkxnSum4RyvdPqf8QEWz0TTquYqjeYtlI1MuWlv7-ISG-lrNipz8v5GxRdhnvhQQl-UftVPv4afJqo1opJ0o2pe4ilOHGrz15crSES_XtY8Q_EABquVRhL9UF6gxnb2bucbDGmMa8mjDdGhQuwDyK2_Alb4VL06xCvRR-hlKRI-AIt5TjjmNy-1VTcqTXDXUvQ4kcw_G">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-5 right-5 flex justify-between items-center text-xs font-bold uppercase tracking-wider text-white"><span class="">FRAME / Fotografi AI &amp; Generatif</span>
+<span class="text-white/60 group-hover:text-white transition-colors">Lihat ↗</span></div>
+</div>
+<!-- Card 2: Video Editing (With sound toggle indicator) -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('video')">
+<img alt="Editing Motion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB15sFvOF_O4y45c4EagvG_aJzuIuFJbN9aMZsV-ChSGwc3RGxVjL1pLlgQFRWsDWS1OMpIQB0fQU_bL6UmXKxA1Zl4li3SCIPkin9vcnIbfBlM0q8dvbN9zX9vuZZmt-qT5SXoRtUoSmnK9Hyg40nnLVsTUfo1pHcWNTN6AURZLylqP3FbiyqjntBEheBvxp_ATpZp-Kv0SiWMrF8VCcftUZrucSchUdz_GU4ln8jq">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<!-- Interactive Sound Badge -->
+<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-4 right-4 z-10 px-3 py-1 bg-black/60 backdrop-blur-md rounded-full text-[11px] font-semibold tracking-wide text-white border border-white/20 flex items-center gap-1.5 hover:bg-black/80" data-state="muted">
+<span class="sound-icon">🔇</span>
+<span class="sound-text">Suara mati</span>
+</button>
+<div class="absolute bottom-4 left-5 right-5 flex justify-between items-center text-xs font-bold uppercase tracking-wider text-white">
+<span class="">MOTION / Editing video</span>
+<span class="text-white/60 group-hover:text-white transition-colors">Putar ↗</span>
+</div>
+</div>
+<!-- Card 3: Artful Details -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('design')">
+<img alt="Detail Artistik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe8OdmnH55gC_xjPkhLpNss005YUp05Up-_dgD_CdjgJo_t8n2-oCAn3oigrfnQiNZ9ELv5HTDqf4e9OJtd1HGrwjsJD-Zx3mNhaYbQDMxdvtXFImXXJkKXnycVSwXUXh4SaE27YoTDxfb1yRls-aU4etdk2ah8ISlVL7ojs_syOoj1x48yszvPwcdhXCDlZqaGZWb5lrM7qVjSNDVmFBlhWguSkvSXOHbqZUY-VPC">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-5 right-5 flex justify-between items-center text-xs font-bold uppercase tracking-wider text-white">
+<span class="">FEEL / Detail artistik</span>
+<span class="text-white/60 group-hover:text-white transition-colors">Jelajahi ↗</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: StudioMetricsBar -->
+<section class="bg-brand-obsidian border-b border-brand-border py-12" data-purpose="metrics-ticker"><div class="max-w-5xl mx-auto px-6"><div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 text-center"><div class="flex flex-col items-center py-4 md:py-0 md:px-8"><span class="text-4xl md:text-5xl font-black font-display text-white tracking-tight">5+ Tahun</span><span class="text-xs font-semibold text-white/50 uppercase tracking-widest mt-2">Pengalaman Praktik</span></div><div class="flex flex-col items-center py-4 md:py-0 md:px-8"><span class="text-4xl md:text-5xl font-black font-display text-white tracking-tight">500K+</span><span class="text-xs font-semibold text-white/50 uppercase tracking-widest mt-2">Tayangan Reel Organik</span></div><div class="flex flex-col items-center py-4 md:py-0 md:px-8"><span class="text-4xl md:text-5xl font-black font-display text-white tracking-tight">100+</span><span class="text-xs font-semibold text-white/50 uppercase tracking-widest mt-2">Proyek Diselesaikan</span></div></div></div></section>
+<!-- END: StudioMetricsBar -->
+<!-- BEGIN: SelectedWorkSection -->
+<section class="py-24 bg-brand-obsidian" data-purpose="selected-works" id="selected-work">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12"><div>
+<span class="text-xs font-bold tracking-[0.25em] uppercase text-white/50 block mb-3">01 / KURASI PORTOFOLIO</span>
+<h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight font-display">
+              Karya yang <br>
+<span class="text-white/80">memikat perhatian.</span>
+</h2>
+</div>
+<p class="text-white/60 max-w-sm mt-6 md:mt-0 text-sm leading-relaxed">
+            Produksi terkurasi mencakup format video pendek, fotografi produk komersial, dan sistem visual terpadu.
+          </p></div>
+<!-- Interactive Category Switcher Tabs -->
+<div class="flex overflow-x-auto lg:grid lg:grid-cols-4 border border-brand-border rounded-xl mb-14 bg-brand-obsidian divide-x divide-white/10 scrollbar-none select-none" data-purpose="work-filter-tabs" id="portfolio-filter-container">
+<!-- Filter 0: All Works -->
+<button class="filter-tab-btn active-tab shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-[#4A0D1B] text-white shadow-[inset_0_0_20px_rgba(107,17,36,0.8)] flex items-center justify-between gap-3 transition-all duration-300 whitespace-nowrap" data-filter="all">
+<span class="flex items-center gap-2">
+<span class="text-xs text-white/40">✱</span>
+<span class="tab-label font-bold">Semua Karya</span>
+</span>
+<span class="tab-badge text-[10px] sm:text-xs px-2 sm:px-2.5 py-0.5 rounded-full bg-white/20 text-white font-mono">26 karya</span>
+</button>
+<!-- Filter 1: Video -->
+<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-3 transition-all duration-300 whitespace-nowrap" data-filter="video">
+<span class="flex items-center gap-2">
+<span class="text-xs text-white/40">01</span>
+<span class="tab-label">Editing Video</span>
+</span>
+<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">5 karya</span>
+</button>
+<!-- Filter 2: Photography -->
+<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-3 transition-all duration-300 whitespace-nowrap" data-filter="photo"><span class="flex items-center gap-2">
+<span class="text-xs text-white/40">02</span>
+<span class="tab-label">Fotografi &amp; AI Visual</span>
+</span>
+<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">13 karya</span></button>
+<!-- Filter 3: Brand Design -->
+<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-3 transition-all duration-300 whitespace-nowrap" data-filter="design">
+<span class="flex items-center gap-2">
+<span class="text-xs text-white/40">03</span>
+<span class="tab-label">Desain Brand</span>
+</span>
+<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">8 karya</span>
+</button>
+</div>
+<!-- Dynamic Works Container -->
+<div id="portfolio-items-wrapper">
+<!-- Video Editing Works Grid (Vertical 9:16 Reels) -->
+<div class="works-group block transition-all duration-300 mb-16" data-category="video" id="video-section-group">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold tracking-tight text-white flex items-center gap-3">
+<span class="">Video &amp; Reel Unggulan</span>
+<span class="text-xs px-2.5 py-0.5 rounded-full bg-[#6B1124] text-white font-mono font-medium">Video</span>
+</h3>
+<span class="text-xs font-mono uppercase tracking-widest text-white/50">01 / 5 KARYA</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6" data-purpose="reels-grid"><!-- Reel 1: Skincare Routine -->
+<div class="group flex flex-col cursor-pointer reel-interactive-card" data-category="Editing Reel &amp; Arahan Visual" data-client="Aura Skincare" data-desc="Potongan ritme presisi, pewarnaan glow hangat, serta penataan tata suara untuk TikTok &amp; Reels." data-duration="0:38" data-metric="3.4M Tayangan" data-poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBVwJVoMB13RKoqYTzWNwx0YKcjaZhtJtbjceaJH8-aLfAynKFjTNiREKfqnTH9ZYWaVWQcz_Z1enG9InpbyoceZFS1tLaClVTAGJxNvku2g2cjQmwlYi3NcStcZUZPpMl2DFAEfHHWQ8qo4EVU-NaTpJx7eQyrldT9mzHst2_na5oPbEoUbpnnlWWFsbBvaQAg-B712p-BO9-61ONVJKlVm_DnnY1-TV-2D8wLp-aB" data-purpose="video-card" data-title="Rutinitas Skincare — Revitalisasi Kulit Kusam" data-youtube="https://youtu.be/g-QnUGMX6xI" onclick="openReelPlayer(this)">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-brand-surface border border-white/10 group-hover:border-[#6B1124] transition-all duration-300 shadow-xl group-hover:shadow-[0_0_25px_rgba(107,17,36,0.55)]">
+<img alt="Reel rutinitas skincare" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVwJVoMB13RKoqYTzWNwx0YKcjaZhtJtbjceaJH8-aLfAynKFjTNiREKfqnTH9ZYWaVWQcz_Z1enG9InpbyoceZFS1tLaClVTAGJxNvku2g2cjQmwlYi3NcStcZUZPpMl2DFAEfHHWQ8qo4EVU-NaTpJx7eQyrldT9mzHst2_na5oPbEoUbpnnlWWFsbBvaQAg-B712p-BO9-61ONVJKlVm_DnnY1-TV-2D8wLp-aB">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40 group-hover:from-black/95 transition-opacity"></div>
+<!-- Live playing aura banner on hover -->
+<div class="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#4A0D1B]/90 backdrop-blur-md border border-white/20 text-[10px] font-bold text-white tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">PRATINJAU</span>
+</div>
+<!-- Sound Toggle -->
+<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-3 right-3 z-20 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-semibold text-white/90 border border-white/20 hover:border-white transition-all" data-state="muted" onclick="toggleCardAudio(event, this)">
+<span class="sound-icon">🔇</span>
+<span class="sound-text hidden xs:inline ml-1">Mati</span>
+</button>
+<!-- Center Hover Play & Waveform Indicator -->
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<div class="w-13 h-13 p-3.5 rounded-full bg-gradient-to-br from-[#6B1124] to-[#4A0D1B] text-white flex items-center justify-center shadow-2xl transform scale-90 group-hover:scale-110 transition-transform duration-300 border border-white/25 group-hover:shadow-[0_0_20px_rgba(107,17,36,0.8)]">
+<svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10">
+<span class="w-1 h-3 bg-[#6B1124] rounded-full animate-pulse"></span>
+<span class="w-1 h-5 bg-white rounded-full animate-pulse" style="animation-delay: 150ms"></span>
+<span class="w-1 h-2 bg-[#6B1124] rounded-full animate-pulse" style="animation-delay: 300ms"></span>
+<span class="w-1 h-4 bg-white rounded-full animate-pulse" style="animation-delay: 450ms"></span>
+</div>
+</div>
+<!-- Bottom Action Button -->
+<div class="absolute bottom-3 left-3 right-3 flex justify-center z-10">
+<button class="open-modal-btn w-full py-2 bg-white/20 backdrop-blur-md hover:bg-[#6B1124] text-white text-xs font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-1.5 hover:shadow-lg">
+<span class="">Tonton Lengkap</span>
+<span class="">↗</span>
+</button>
+</div>
+</div>
+<div class="mt-3 flex items-start justify-between">
+<p class="text-xs sm:text-sm font-semibold text-white/90 line-clamp-1 group-hover:text-brand-blueLight transition-colors">Rutinitas skincare — kulit kusam</p>
+<span class="text-[11px] font-mono text-white/40 ml-2">01</span>
+</div>
+</div>
+<!-- Reel 2: LED Rejuvenation -->
+<div class="group flex flex-col cursor-pointer reel-interactive-card" data-category="Motion Estetika Medis" data-client="Dr. Felinda Ariani" data-desc="Penceritaan sebelum dan sesudah perawatan klinis, motion graphics grafis, dan mixing audio." data-duration="0:45" data-metric="1.8M Tayangan" data-poster="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqzPBhB2cJ5DHk0A2a8kvXYEqi0p3W4boojqRC51486qJW8pxGfIZ1wlTTsfqnVte07K4kqNtOulyMhNrceEoOm7pRIOAxu_SN-AQ2ERbx7Bm18eVb5YZATruuKfS9JDouU7I-CbngimWtTaWOzhHaQguslsbcL0PbeSTTCC8mKp9vfQvT4vpAKs2YESrK0Wjq6v_-Ad7zJ52VmrPl7CNX1L1pq4zRoPlgoMTAOPO" data-purpose="video-card" data-title="Peremajaan LED vs. Facial Biasa" data-youtube="https://youtu.be/NKij7gLwZXY" onclick="openReelPlayer(this)">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-brand-surface border border-white/10 group-hover:border-[#6B1124] transition-all duration-300 shadow-xl group-hover:shadow-[0_0_25px_rgba(107,17,36,0.55)]">
+<img alt="Reel Perawatan Klinik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqzPBhB2cJ5DHk0A2a8kvXYEqi0p3W4boojqRC51486qJW8pxGfIZ1wlTTsfqnVte07K4kqNtOulyMhNrceEoOm7pRIOAxu_SN-AQ2ERbx7Bm18eVb5YZATruuKfS9JDouU7I-CbngimWtTaWOzhHaQguslsbcL0PbeSTTCC8mKp9vfQvT4vpAKs2YESrK0Wjq6v_-Ad7zJ52VmrPl7CNX1L1pq4zRoPlgoMTAOPO">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40 group-hover:from-black/95 transition-opacity"></div>
+<div class="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#4A0D1B]/90 backdrop-blur-md border border-white/20 text-[10px] font-bold text-white tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">PRATINJAU</span>
+</div>
+<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-3 right-3 z-20 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-semibold text-white/90 border border-white/20 hover:border-white transition-all" data-state="muted" onclick="toggleCardAudio(event, this)">
+<span class="sound-icon">🔇</span>
+<span class="sound-text hidden xs:inline ml-1">Mati</span>
+</button>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<div class="w-13 h-13 p-3.5 rounded-full bg-gradient-to-br from-[#6B1124] to-[#4A0D1B] text-white flex items-center justify-center shadow-2xl transform scale-90 group-hover:scale-110 transition-transform duration-300 border border-white/25 group-hover:shadow-[0_0_20px_rgba(107,17,36,0.8)]">
+<svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10">
+<span class="w-1 h-3 bg-[#6B1124] rounded-full animate-pulse"></span>
+<span class="w-1 h-5 bg-white rounded-full animate-pulse" style="animation-delay: 150ms"></span>
+<span class="w-1 h-2 bg-[#6B1124] rounded-full animate-pulse" style="animation-delay: 300ms"></span>
+<span class="w-1 h-4 bg-white rounded-full animate-pulse" style="animation-delay: 450ms"></span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-center z-10">
+<button class="open-modal-btn w-full py-2 bg-white/20 backdrop-blur-md hover:bg-[#6B1124] text-white text-xs font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-1.5 hover:shadow-lg">
+<span class="">Tonton Lengkap</span>
+<span class="">↗</span>
+</button>
+</div>
+</div>
+<div class="mt-3 flex items-start justify-between">
+<p class="text-xs sm:text-sm font-semibold text-white/90 line-clamp-1 group-hover:text-brand-blueLight transition-colors">Peremajaan LED vs. facial</p>
+<span class="text-[11px] font-mono text-white/40 ml-2">02</span>
+</div>
+</div>
+<!-- Reel 3: Culinary Craft -->
+<div class="group flex flex-col cursor-pointer reel-interactive-card" data-category="Kampanye Media Sosial F&amp;B" data-client="Cemilyn Kitchen" data-desc="Videografi kuliner makro dinamis, transisi ASMR cepat, dan penataan gaya warna." data-duration="0:52" data-metric="4.1M Tayangan" data-poster="https://lh3.googleusercontent.com/aida-public/AB6AXuA2WKY3HZ4lURWMkBxENQbZbIvlkAqLfDX1hCxRNiOYEztuXWMGIkDUUMxjBnQjxAYlujkm4kyzDsQDXhfzHV3TLmUez1LXV1pKin_X7eLvifUH4XgIZl75iCWuD77bKuSoYeht9hrloKx6wz8TZwPcrZ1nxLKbWLQV2r7nmrxYrTR0Z8DbuH87I1hUduLmKF61VtVHxBJ8T-SayZlUok-LZx20zu87SNrLXHSmJORv" data-purpose="video-card" data-title="Pembuatan Kroket Kentang Artisan" data-youtube="https://youtu.be/RIqGR9T_7To" onclick="openReelPlayer(this)">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-brand-surface border border-white/10 group-hover:border-[#6B1124] transition-all duration-300 shadow-xl group-hover:shadow-[0_0_25px_rgba(107,17,36,0.55)]">
+<img alt="Reel Dapur Artisan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2WKY3HZ4lURWMkBxENQbZbIvlkAqLfDX1hCxRNiOYEztuXWMGIkDUUMxjBnQjxAYlujkm4kyzDsQDXhfzHV3TLmUez1LXV1pKin_X7eLvifUH4XgIZl75iCWuD77bKuSoYeht9hrloKx6wz8TZwPcrZ1nxLKbWLQV2r7nmrxYrTR0Z8DbuH87I1hUduLmKF61VtVHxBJ8T-SayZlUok-LZx20zu87SNrLXHSmJORv">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40 group-hover:from-black/95 transition-opacity"></div>
+<div class="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#4A0D1B]/90 backdrop-blur-md border border-white/20 text-[10px] font-bold text-white tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">PRATINJAU</span>
+</div>
+<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-3 right-3 z-20 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-semibold text-white/90 border border-white/20 hover:border-white transition-all" data-state="muted" onclick="toggleCardAudio(event, this)">
+<span class="sound-icon">🔇</span>
+<span class="sound-text hidden xs:inline ml-1">Mati</span>
+</button>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<div class="w-13 h-13 p-3.5 rounded-full bg-gradient-to-br from-[#6B1124] to-[#4A0D1B] text-white flex items-center justify-center shadow-2xl transform scale-90 group-hover:scale-110 transition-transform duration-300 border border-white/25 group-hover:shadow-[0_0_20px_rgba(107,17,36,0.8)]">
+<svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10">
+<span class="w-1 h-3 bg-[#6B1124] rounded-full animate-pulse"></span>
+<span class="w-1 h-5 bg-white rounded-full animate-pulse" style="animation-delay: 150ms"></span>
+<span class="w-1 h-2 bg-[#6B1124] rounded-full animate-pulse" style="animation-delay: 300ms"></span>
+<span class="w-1 h-4 bg-white rounded-full animate-pulse" style="animation-delay: 450ms"></span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-center z-10">
+<button class="open-modal-btn w-full py-2 bg-white/20 backdrop-blur-md hover:bg-[#6B1124] text-white text-xs font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-1.5 hover:shadow-lg">
+<span class="">Tonton Lengkap</span>
+<span class="">↗</span>
+</button>
+</div>
+</div>
+<div class="mt-3 flex items-start justify-between">
+<p class="text-xs sm:text-sm font-semibold text-white/90 line-clamp-1 group-hover:text-brand-blueLight transition-colors">Proses Dapur Cemilyn</p>
+<span class="text-[11px] font-mono text-white/40 ml-2">03</span>
+</div>
+</div>
+<!-- Reel 4: Ceramic Workshop -->
+<div class="group flex flex-col cursor-pointer reel-interactive-card" data-category="Penceritaan Gaya Hidup" data-client="Gohan Creative Studio" data-desc="Tur studio sinematik menangkap keahlian tangan secara mendalam dengan sentuhan tata suara halus." data-duration="0:42" data-metric="2.6M Tayangan" data-poster="https://lh3.googleusercontent.com/aida-public/AB6AXuADl4RVeODI52_XfhZeV1ig7b7-2W4glVATcW5eNt-EmVB35war1BimejWaT8UYOmI2HksGSac7v3UYYrTiOr-nMttrawA-JguoRO-kFMHHshynasP6uPMKYi4tTt5JvQaux7SHvWpaJf8vAm-o1ss6j81LfcOcUeF8CI5Sv0leZV097yqflpmfATNI8T6D_JQ4Xj5bEY24kWzSG2yM9fca_jr_-Nh3RcO9xfURecMJ" data-purpose="video-card" data-title="Pengalaman Workshop Keramik Artisan" data-youtube="https://youtu.be/fnbkA9yGzYg" onclick="openReelPlayer(this)">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-brand-surface border border-white/10 group-hover:border-[#6B1124] transition-all duration-300 shadow-xl group-hover:shadow-[0_0_25px_rgba(107,17,36,0.55)]">
+<img alt="Reel workshop keramik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADl4RVeODI52_XfhZeV1ig7b7-2W4glVATcW5eNt-EmVB35war1BimejWaT8UYOmI2HksGSac7v3UYYrTiOr-nMttrawA-JguoRO-kFMHHshynasP6uPMKYi4tTt5JvQaux7SHvWpaJf8vAm-o1ss6j81LfcOcUeF8CI5Sv0leZV097yqflpmfATNI8T6D_JQ4Xj5bEY24kWzSG2yM9fca_jr_-Nh3RcO9xfURecMJ">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40 group-hover:from-black/95 transition-opacity"></div>
+<div class="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#4A0D1B]/90 backdrop-blur-md border border-white/20 text-[10px] font-bold text-white tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">PRATINJAU</span>
+</div>
+<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-3 right-3 z-20 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-semibold text-white/90 border border-white/20 hover:border-white transition-all" data-state="muted" onclick="toggleCardAudio(event, this)">
+<span class="sound-icon">🔇</span>
+<span class="sound-text hidden xs:inline ml-1">Mati</span>
+</button>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<div class="w-13 h-13 p-3.5 rounded-full bg-gradient-to-br from-[#6B1124] to-[#4A0D1B] text-white flex items-center justify-center shadow-2xl transform scale-90 group-hover:scale-110 transition-transform duration-300 border border-white/25 group-hover:shadow-[0_0_20px_rgba(107,17,36,0.8)]">
+<svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10">
+<span class="w-1 h-3 bg-[#6B1124] rounded-full animate-pulse"></span>
+<span class="w-1 h-5 bg-white rounded-full animate-pulse" style="animation-delay: 150ms"></span>
+<span class="w-1 h-2 bg-[#6B1124] rounded-full animate-pulse" style="animation-delay: 300ms"></span>
+<span class="w-1 h-4 bg-white rounded-full animate-pulse" style="animation-delay: 450ms"></span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-center z-10">
+<button class="open-modal-btn w-full py-2 bg-white/20 backdrop-blur-md hover:bg-[#6B1124] text-white text-xs font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-1.5 hover:shadow-lg">
+<span class="">Tonton Lengkap</span>
+<span class="">↗</span>
+</button>
+</div>
+</div>
+<div class="mt-3 flex items-start justify-between">
+<p class="text-xs sm:text-sm font-semibold text-white/90 line-clamp-1 group-hover:text-brand-blueLight transition-colors">Workshop Gohan Tours</p>
+<span class="text-[11px] font-mono text-white/40 ml-2">04</span>
+</div>
+</div>
+<!-- Reel 5: Podcast & Show -->
+<div class="group flex flex-col cursor-pointer reel-interactive-card" data-category="Editing Podcast &amp; Show" data-client="The Relationship Room" data-desc="Sinkronisasi multicam podcast, desain takarir visual dinamis, dan pemotongan tempo viral." data-duration="0:58" data-metric="5.2M Tayangan" data-poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBVtTCJzq5Iw42WQ9HmM0JThtvbRKXWpsA09saK4XYxk0Kp2F-4TQeEqVREpJIFg-X2JKkmzqJRWOkvtWpwBlPZMRjhfj-tP2YyCzmTU0cQYKev3ZV6GWJuWWzwwwPmh14DuTOg4W7FFzeNQT7h55Wt9tYOaij30h5veVDZ6VRyUnm7l03Iyaq7inhm7giKXCbgYKfFRoRUT58ILh5EpK9KodNhERC137AfzIrvUq2D" data-purpose="video-card" data-title="Bincang Relationship Room Ep. 42" data-youtube="https://youtu.be/ku7W-lfj7rM" onclick="openReelPlayer(this)">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-brand-surface border border-white/10 group-hover:border-[#6B1124] transition-all duration-300 shadow-xl group-hover:shadow-[0_0_25px_rgba(107,17,36,0.55)]">
+<img alt="Reel Wawancara Podcast" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVtTCJzq5Iw42WQ9HmM0JThtvbRKXWpsA09saK4XYxk0Kp2F-4TQeEqVREpJIFg-X2JKkmzqJRWOkvtWpwBlPZMRjhfj-tP2YyCzmTU0cQYKev3ZV6GWJuWWzwwwPmh14DuTOg4W7FFzeNQT7h55Wt9tYOaij30h5veVDZ6VRyUnm7l03Iyaq7inhm7giKXCbgYKfFRoRUT58ILh5EpK9KodNhERC137AfzIrvUq2D">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40 group-hover:from-black/95 transition-opacity"></div>
+<div class="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#4A0D1B]/90 backdrop-blur-md border border-white/20 text-[10px] font-bold text-white tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">PRATINJAU</span>
+</div>
+<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-3 right-3 z-20 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-semibold text-white/90 border border-white/20 hover:border-white transition-all" data-state="muted" onclick="toggleCardAudio(event, this)">
+<span class="sound-icon">🔇</span>
+<span class="sound-text hidden xs:inline ml-1">Mati</span>
+</button>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<div class="w-13 h-13 p-3.5 rounded-full bg-gradient-to-br from-[#6B1124] to-[#4A0D1B] text-white flex items-center justify-center shadow-2xl transform scale-90 group-hover:scale-110 transition-transform duration-300 border border-white/25 group-hover:shadow-[0_0_20px_rgba(107,17,36,0.8)]">
+<svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10">
+<span class="w-1 h-3 bg-[#6B1124] rounded-full animate-pulse"></span>
+<span class="w-1 h-5 bg-white rounded-full animate-pulse" style="animation-delay: 150ms"></span>
+<span class="w-1 h-2 bg-[#6B1124] rounded-full animate-pulse" style="animation-delay: 300ms"></span>
+<span class="w-1 h-4 bg-white rounded-full animate-pulse" style="animation-delay: 450ms"></span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-center z-10">
+<button class="open-modal-btn w-full py-2 bg-white/20 backdrop-blur-md hover:bg-[#6B1124] text-white text-xs font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-1.5 hover:shadow-lg">
+<span class="">Tonton Lengkap</span>
+<span class="">↗</span>
+</button>
+</div>
+</div>
+<div class="mt-3 flex items-start justify-between">
+<p class="text-xs sm:text-sm font-semibold text-white/90 line-clamp-1 group-hover:text-brand-blueLight transition-colors">Bincang Relationship Room</p>
+<span class="text-[11px] font-mono text-white/40 ml-2">05</span>
+</div>
+</div></div>
+</div>
+<!-- Photography Showcase Grid -->
+<div class="works-group block transition-all duration-300 mb-16 pt-12 border-t border-brand-border" data-category="photo" id="photo-section-group">
+<div class="flex items-center justify-between mb-8"><h3 class="text-2xl font-bold tracking-tight text-white flex items-center gap-3">
+<span class="">Fotografi AI &amp; Generative Imagery</span>
+<span class="text-xs px-2.5 py-0.5 rounded-full bg-[#6B1124] text-white font-mono font-medium">AI Visual / Foto</span>
+</h3>
+<span class="text-xs font-mono uppercase tracking-widest text-white/50">02 / 13 KARYA</span></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-purpose="photography-grid"><!-- Photo Card 1: Luxury Perfume -->
+<div class="group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-white/40 transition-all cursor-pointer">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Aura Botanique — Luxury Perfume" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3WlR8wOFJk_ygpQSoqGQSRHsHH8k9eYRCe3ExUMTgmh0G8b_aLXqyScg_4jTLZCY_f05KsZjH34uN4vaYP_GGuwRsrzMYczBl20t7iZqiP8ajvdX8SgZqomNCqjI4M2KOZb1_-XZzTNmGrFddMLksKGP_eTqxuRlmly7imXAL4BheJGoGBIHqwdJlVLM7L67JgnX8V9md8BsqmPMi-sSU3J_K3-eW9Z7E5BTE0dZi">
+<div class="absolute top-3 right-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/20">Midjourney / ComfyUI</div>
+</div>
+<div class="p-5 flex justify-between items-center bg-brand-surface">
+<div>
+<h4 class="text-white font-bold text-base group-hover:text-brand-blueLight transition-colors">Aura Botanique — Luxury Perfume</h4>
+<p class="text-xs text-white/50 mt-0.5">Generative AI Product Commercial • Prompting &amp; Art Direction</p>
+</div>
+<span class="text-xs font-mono text-white/40">2024</span>
+</div>
+</div>
+<!-- Photo Card 2: Conceptual Architecture -->
+<div class="group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-white/40 transition-all cursor-pointer">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Oasis Pavilion — Conceptual Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHrh5FTILslWhEHnXfJBDvKWjUXzT2owRaLatSDCrKdyRa3te0L-E1inOGn3Bi-VuewuFy9zGoOsSpwgdNgxAJjPfvAHzyo7r3xvmwS-sEorc9L_ShEbjS1Yd9I-u6P2ccoak9bdNkXAYfEEcMnrhdxQEBqvhPl-SSpKlYvfxsEEYAY7pPdaNQbufrUxJAeygr-Sxro9i_5G05fIHhNV9RA3kh1QpS4s9un-wq_CsB">
+<div class="absolute top-3 right-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/20">Generative ArchViz</div>
+</div>
+<div class="p-5 flex justify-between items-center bg-brand-surface">
+<div>
+<h4 class="text-white font-bold text-base group-hover:text-brand-blueLight transition-colors">Oasis Pavilion — Conceptual Architecture</h4>
+<p class="text-xs text-white/50 mt-0.5">Surreal Editorial &amp; Environmental Visual</p>
+</div>
+<span class="text-xs font-mono text-white/40">2024</span>
+</div>
+</div>
+<!-- Photo Card 3: Beverage Fluid Simulation -->
+<div class="group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-white/40 transition-all cursor-pointer">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Matcha Splash — Beverage Commercial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFJSq0wsuFtbh4gW_LRaqT9Clj54i2MHzeGFptWUMsu6TsuKaWX7TSMt-At32BN0ZMqZuukjKi2BflRPS4mCHuGNjWGDUiDTRdwinR7hsD2unaTstT_kXzpGwmMn4S6LtJPiRA5p_mSxD8-HHQ3VO7jp2nttKBcfB4NAyM60lTwYDYZfTNl5PDYJ5wj2zHFuiRJo-Mr0KgvbuYFfc_Q45ZXN8C5PRf7xSRkl-nQLO">
+<div class="absolute top-3 right-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/20">Commercial AI</div>
+</div>
+<div class="p-5 flex justify-between items-center bg-brand-surface">
+<div>
+<h4 class="text-white font-bold text-base group-hover:text-brand-blueLight transition-colors">Matcha Splash — Beverage Commercial</h4>
+<p class="text-xs text-white/50 mt-0.5">High-Speed Fluid AI Simulation &amp; Retouching</p>
+</div>
+<span class="text-xs font-mono text-white/40">2024</span>
+</div>
+</div></div>
+</div>
+<!-- Brand Design Group -->
+<div class="works-group block transition-all duration-300 pt-12 border-t border-brand-border" data-category="design" id="design-section-group">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold tracking-tight text-white flex items-center gap-3">
+<span class="">Identitas &amp; Arahan Visual</span>
+<span class="text-xs px-2.5 py-0.5 rounded-full bg-[#6B1124] text-white font-mono font-medium">Brand</span>
+</h3>
+<span class="text-xs font-mono uppercase tracking-widest text-white/50">03 / 8 KARYA</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-purpose="design-grid">
+<div class="group rounded-2xl overflow-hidden bg-brand-surface border border-brand-border hover:border-brand-blue transition-all">
+<div class="aspect-video overflow-hidden bg-brand-obsidian p-8 flex items-center justify-center">
+<div class="text-center">
+<span class="text-6xl font-black font-display text-white tracking-widest block group-hover:text-brand-blueLight transition-colors">NOVA</span>
+<span class="text-xs tracking-[0.4em] uppercase text-white/40 mt-2 block">Sistem Brand Skincare</span>
+</div>
+</div>
+<div class="p-6 flex justify-between items-center">
+<div>
+<h4 class="text-white font-bold text-lg">Nova Aesthetics</h4>
+<p class="text-xs text-white/50 mt-1">Panduan Brand, Kemasan, Tipografi</p>
+</div>
+<span class="px-4 py-2 rounded-full border border-white/20 text-xs font-semibold text-white/80 group-hover:border-white transition-colors">Studi Kasus ↗</span>
+</div>
+</div>
+<div class="group rounded-2xl overflow-hidden bg-brand-surface border border-brand-border hover:border-brand-blue transition-all">
+<div class="aspect-video overflow-hidden bg-brand-blue p-8 flex items-center justify-center" style="background: linear-gradient(135deg, rgb(74, 13, 27) 0%, rgb(107, 17, 36) 50%, rgb(53, 8, 19) 100%);">
+<div class="text-center">
+<span class="text-6xl font-black font-display text-white tracking-tighter block">VERVE ✦</span>
+<span class="text-xs tracking-[0.4em] uppercase text-white/80 mt-2 block">Sistem Desain Motion</span>
+</div>
+</div>
+<div class="p-6 flex justify-between items-center">
+<div>
+<h4 class="text-white font-bold text-lg">Verve Creative Agency</h4>
+<p class="text-xs text-white/50 mt-1">Logomark, Aset 3D, Perangkat Media Sosial</p>
+</div>
+<span class="px-4 py-2 rounded-full border border-white/20 text-xs font-semibold text-white/80 group-hover:border-white transition-colors">Studi Kasus ↗</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SelectedWorkSection -->
+<!-- BEGIN: StudioAboutSection -->
+<section class="py-24 bg-brand-surface border-t border-brand-border" data-purpose="studio-narrative" id="studio-about"><div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<span class="text-xs font-bold tracking-[0.25em] uppercase text-white/60">TENTANG YUSUF</span>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-display leading-[1.15]">
+            Digerakkan oleh ritme, daya visual kuat, dan presisi cerita.
+          </h2>
+<p class="text-white/70 leading-relaxed text-base">
+            Saya adalah spesialis kreatif multidisiplin dengan kepekaan tinggi terhadap ritme, detail mikro, dan retensi penonton. Selama lebih dari 5 tahun, saya telah mengarahkan, merekam, dan mengedit konten video pendek serta aset brand yang telah ditonton puluhan juta kali secara global.
+          </p>
+<p class="text-white/70 leading-relaxed text-base">
+            Baik berkolaborasi dalam tim in-house maupun memimpin sprint konten kreatif berkecepatan tinggi, saya berdedikasi mewujudkan ide mentah menjadi produksi jadi yang memikat dan siap tayang.
+          </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="p-4 rounded-xl bg-brand-obsidian border border-brand-border">
+<h4 class="text-white font-bold text-sm mb-1">Penyelesaian Cepat</h4>
+<p class="text-xs text-white/50">Siklus iterasi cepat dengan ketelitian color grading, motion, dan polesan audio yang rapi.</p>
+</div>
+<div class="p-4 rounded-xl bg-brand-obsidian border border-brand-border">
+<h4 class="text-white font-bold text-sm mb-1">Kreatif Menyeluruh (End-to-End)</h4>
+<p class="text-xs text-white/50">Dari penyusunan storyboard hingga pengoperasian kamera, pascaproduksi, dan sistem desain.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-3xl overflow-hidden border border-white/20 shadow-2xl aspect-[4/3]">
+<img alt="Ruang Kerja Kreatif dan Produksi Yusuf" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiWggyzXiRxOtChRfd3YP_ByRcl3EKVSJbszFBt_QtjYRKHmPXPtheHTVf-fGGEgUBrNQmzmlRdzhMQ_RK8xoxZXXxIY3LZ0vAmSUK1a05SkGWz0GEWfTbiVVtIyxylPqKikkOjanwDHbudEdvy_Y6eOlZ1dkVnGYM0iiBUq6N68csJmjnsY8PejZk8_e7tA14jv1fxobFiI86k99gX3qKSlCT7iq_mJd82iUlozJV">
+<div class="absolute inset-0 bg-gradient-to-t from-brand-obsidian/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-xs text-white/90">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#6B1124]"></span>
+<span class="font-bold">Yusuf | Studio Kreatif &amp; Suites</span>
+</div>
+<span class="font-mono text-white/60">Tersedia Secara Global / Siap Relokasi</span>
+</div>
+</div>
+</div>
+</div></section>
+<!-- END: StudioAboutSection -->
+<!-- BEGIN: PricingAndServices -->
+<section class="py-24 bg-brand-obsidian border-t border-brand-border" data-purpose="career-experience" id="skills-experience">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold tracking-[0.25em] uppercase text-white/60">JEJAK KARIER &amp; KEAHLIAN</span>
+<h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight font-display mt-3 mb-4">
+            Pengalaman &amp; Keahlian
+          </h2>
+<p class="text-white/60 text-sm">
+            Rekam jejak dalam memproduksi konten komersial berkinerja tinggi, memimpin arahan kreatif, dan meningkatkan citra brand.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Role 1 -->
+<div class="rounded-3xl p-8 bg-brand-surface border border-brand-border flex flex-col justify-between hover:border-white/30 transition-all">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-[#ff6b8b]">2023 — Sekarang</span>
+<span class="text-xs px-2.5 py-1 rounded-full bg-white/10 text-white font-mono">Full-Time / Lead</span>
+</div>
+<h3 class="text-2xl font-extrabold text-white mb-1 font-display">Lead Video Editor &amp; Motion Designer</h3>
+<p class="text-xs text-white/60 mb-6 font-mono">Apex Creative Media — London / Remote</p>
+<ul class="space-y-3 text-xs text-white/80 border-t border-brand-border pt-6">
+<li class="flex items-center gap-2">✓ Mengarahkan pipeline motion video pendek berkinerja tinggi yang menghasilkan 35M+ views</li>
+<li class="flex items-center gap-2">✓ Menguasai teknik potongan berbasis ritme, mixing suara &amp; grading warna untuk berbagai klien komersial</li>
+<li class="flex items-center gap-2">✓ Memangkas waktu turnaround hingga 40% melalui standardisasi alur kerja template</li>
+</ul>
+</div>
+</div>
+<!-- Role 2 (Highlighted) -->
+<div class="rounded-3xl p-8 bg-gradient-to-b from-brand-surface to-[#160708] border-2 border-[#6B1124] flex flex-col justify-between relative shadow-2xl shadow-[#6B1124]/30">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#6B1124] text-white text-[11px] font-extrabold uppercase tracking-widest shadow-md border border-white/20 whitespace-nowrap">
+              Pencapaian Kunci
+            </div>
+<div>
+<div class="flex justify-between items-center mb-4 mt-2">
+<span class="text-xs font-bold uppercase tracking-widest text-[#ff6b8b]">2021 — 2023</span>
+<span class="text-xs px-2.5 py-1 rounded-full bg-[#6B1124]/40 text-[#ff8da5] font-mono">In-House</span>
+</div>
+<h3 class="text-2xl font-extrabold text-white mb-1 font-display">Senior Multimedia Creator</h3>
+<p class="text-xs text-white/60 mb-6 font-mono">Verve Studio Collective — Berlin</p>
+<ul class="space-y-3 text-xs text-white/90 border-t border-brand-border pt-6">
+<li class="flex items-center gap-2 font-semibold text-white">✓ Memimpin sesi syuting lifestyle video, tata cahaya, dan sinematografi produk</li>
+<li class="flex items-center gap-2">✓ Merancang identitas brand terpadu dan peluncuran media sosial viral</li>
+<li class="flex items-center gap-2">✓ Membimbing junior video editor dan mengelola antrean pascaproduksi</li>
+</ul>
+</div>
+</div>
+<!-- Role 3 -->
+<div class="rounded-3xl p-8 bg-brand-surface border border-brand-border flex flex-col justify-between hover:border-white/30 transition-all">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-white/50">2019 — 2021</span>
+<span class="text-xs px-2.5 py-1 rounded-full bg-white/10 text-white font-mono">Agensi</span>
+</div>
+<h3 class="text-2xl font-extrabold text-white mb-1 font-display">Visual Designer &amp; Fotografer</h3>
+<p class="text-xs text-white/60 mb-6 font-mono">Studio Nine — Creative Agency</p>
+<ul class="space-y-3 text-xs text-white/80 border-t border-brand-border pt-6">
+<li class="flex items-center gap-2">✓ Memotret 80+ kampanye komersial produk dan fashion lifestyle</li>
+<li class="flex items-center gap-2">✓ Merancang panduan brand interaktif dan presentasi pitch deck</li>
+<li class="flex items-center gap-2">✓ Menangani retouching mendalam, tipografi, dan aset visual</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Toolset & Skills Badges -->
+<div class="p-8 rounded-3xl bg-brand-surface border border-brand-border flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-[#ff6b8b] block mb-1">ARSENAL UTAMA &amp; PERANGKAT KERJA</span>
+<h4 class="text-xl font-bold text-white">Perangkat Lunak Standar Industri &amp; Kemampuan Teknis</h4>
+</div>
+<div class="flex flex-wrap gap-2.5 max-w-xl justify-start md:justify-end">
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">Premiere Pro</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">After Effects</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">DaVinci Resolve</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">Adobe Lightroom</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">Photoshop &amp; Illustrator</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">Figma UI/UX</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">Sony FX Cinema Rig</span>
+<span class="px-3.5 py-1.5 rounded-full bg-brand-obsidian border border-white/20 text-white text-xs font-semibold">Sound Design &amp; EQ</span>
+<span class="px-3.5 py-1.5 rounded-full bg-[#6B1124]/40 border border-[#ff6b8b]/40 text-[#ff8da5] text-xs font-semibold">Midjourney v6</span>
+<span class="px-3.5 py-1.5 rounded-full bg-[#6B1124]/40 border border-[#ff6b8b]/40 text-[#ff8da5] text-xs font-semibold">ComfyUI / Stable Diffusion</span>
+<span class="px-3.5 py-1.5 rounded-full bg-[#6B1124]/40 border border-[#ff6b8b]/40 text-[#ff8da5] text-xs font-semibold">Runway Gen-3</span>
+<span class="px-3.5 py-1.5 rounded-full bg-[#6B1124]/40 border border-[#ff6b8b]/40 text-[#ff8da5] text-xs font-semibold">Flux / ControlNet</span></div>
+</div>
+</div>
+</section>
+<!-- END: PricingAndServices -->
+<!-- BEGIN: CallToActionFooter -->
+<section class="py-24 bg-brand-blue text-white relative overflow-hidden" data-purpose="contact-cta" id="contact" style="background: linear-gradient(135deg, rgb(59, 8, 20) 0%, rgb(107, 17, 36) 50%, rgb(74, 13, 27) 100%);"><div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-white/80 block mb-4">REKRUTMEN &amp; KOLABORASI</span>
+<h2 class="text-4xl sm:text-7xl font-black font-display tracking-tight text-white max-w-4xl mx-auto leading-[1.05] mb-8">
+          Mencari sosok kreatif berdampak tinggi untuk tim Anda?
+        </h2>
+<p class="text-lg text-white/80 max-w-xl mx-auto mb-10">
+          Baik untuk posisi in-house penuh waktu, posisi creative director, maupun proyek kolaborasi utama — mari wujudkan karya istimewa bersama.
+        </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto">
+<a class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-brand-obsidian text-white font-bold text-xs sm:text-sm tracking-wider uppercase hover:bg-black transition-all hover:scale-105 shadow-2xl border border-white/20 text-center" href="mailto:yusuf@creative.work">
+HUBUNGI SAYA — YUSUF@CREATIVE.WORK
+</a>
+<a class="w-full sm:w-auto px-6 sm:px-7 py-3.5 sm:py-4 rounded-full border border-white/30 text-white font-semibold text-xs sm:text-sm hover:bg-white/10 transition-colors text-center" download="" href="mailto:yusuf@creative.work?subject=Resume%20Request">
+Unduh Resume / CV
+</a>
+</div>
+</div></section>
+<!-- END: CallToActionFooter -->
+</main>
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-brand-obsidian border-t border-brand-border py-12 text-white/60 text-xs" data-purpose="main-footer"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-3">
+<span class="font-display font-extrabold text-[#ff2a4d] text-xl" style="color: rgb(255, 42, 77);">yusuf</span>
+<span class="text-white/20">|</span>
+<span class="font-mono text-white/40">© 2025 Yusuf. Dibuat untuk peluang kolaborasi kreatif.</span>
+</div>
+<!-- Socials & Recruiter Channels -->
+<div class="flex items-center space-x-6 font-medium">
+<a class="hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="#">Instagram</a>
+<a class="hover:text-white transition-colors" href="#">Behance</a>
+<a class="hover:text-white transition-colors" href="#">Vimeo</a>
+<a class="hover:text-white transition-colors" href="mailto:yusuf@creative.work">Email</a>
+</div>
+</div></footer>
+<!-- END: SiteFooter -->
+<!-- BEGIN: InteractiveVideoModal -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/90 backdrop-blur-xl opacity-0 pointer-events-none transition-opacity duration-300" data-purpose="video-lightbox-modal" id="video-modal" role="dialog">
+<div class="relative w-full max-w-3xl bg-brand-surface border border-white/20 rounded-3xl p-6 sm:p-8 shadow-2xl transform scale-95 transition-transform duration-300 overflow-hidden" id="modal-container" style="box-shadow: 0 0 50px rgba(107,17,36,0.35);">
+<!-- Ambient Burgundy Glow in Background -->
+<div class="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-[#6B1124]/30 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-[#4A0D1B]/40 blur-3xl pointer-events-none"></div>
+<!-- Header & Close Button -->
+<div class="flex items-center justify-between pb-4 mb-4 border-b border-white/10 relative z-10">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-[#6B1124] text-white text-[10px] font-bold uppercase tracking-wider">Master Definisi Tinggi</span>
+<span class="text-xs font-mono text-white/50" id="modal-metric">3.4M Tayangan</span>
+</div>
+<button aria-label="Tutup modal" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#6B1124] text-white flex items-center justify-center transition-all hover:scale-110 font-bold border border-white/10" id="modal-close-btn" onclick="closeModal()">
+        ✕
+      </button>
+</div>
+<!-- Video Player Container (YouTube Embed) -->
+<div class="relative aspect-video max-h-[65vh] mx-auto w-full rounded-2xl overflow-hidden bg-black mb-6 flex items-center justify-center border border-white/15 shadow-2xl" id="modal-player-wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full h-full hidden" frameborder="0" id="modal-youtube-iframe" referrerpolicy="strict-origin-when-cross-origin" src="" title="YouTube video player"></iframe>
+<div class="relative w-full h-full flex items-center justify-center" id="modal-fallback-preview">
+<img alt="Pratinjau Video" class="w-full h-full object-cover opacity-80" id="modal-image-preview" src="">
+<div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-6">
+<span class="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-white">Link YouTube belum diisi untuk karya ini</span>
+</div>
+</div>
+</div>
+<!-- Video Meta Details -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xs font-mono uppercase tracking-widest text-[#ff6b8b] font-bold" id="modal-category">Editing Reel</span>
+<span class="text-white/30">•</span>
+<span class="text-xs text-white/60 font-medium" id="modal-client">Klien: Aura Skincare</span>
+</div>
+<h3 class="text-xl sm:text-2xl font-black text-white font-display" id="modal-title">Rutinitas Skincare — Revitalisasi Kulit Kusam</h3>
+<p class="text-xs sm:text-sm text-white/70 mt-1 max-w-xl" id="modal-desc">Potongan ritme presisi, pewarnaan glow hangat, serta penataan tata suara untuk TikTok &amp; Reels.</p>
+</div>
+<div class="flex items-center gap-3 pt-2 sm:pt-0 shrink-0">
+<a class="px-5 py-2.5 rounded-full bg-[#6B1124] hover:bg-[#85162D] text-white text-xs font-bold transition-all shadow-lg hover:scale-105 border border-white/20" href="#contact" onclick="closeModal()">
+          Konsultasi Proyek ↗
+        </a>
+</div>
+</div>
+</div>
+</div>
+<!-- END: InteractiveVideoModal -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="interactive-functionality">
+    // Expose filter function globally
+    let filterPortfolio;
+    let openReelPlayer;
+    let toggleCardAudio;
+    let closeModal;
+    let toggleSimulatedFullscreen;
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. Dynamic Category Filter Switcher without page reload
+      const filterTabs = document.querySelectorAll('.filter-tab-btn');
+      const workSections = document.querySelectorAll('.works-group');
+
+      filterPortfolio = function(filterCategory) {
+        // Update active tab buttons visual state
+        filterTabs.forEach((tab) => {
+          const tabFilter = tab.getAttribute('data-filter');
+          const tabBadge = tab.querySelector('.tab-badge');
+          
+          if (tabFilter === filterCategory) {
+            tab.classList.add('active-tab', 'bg-[#4A0D1B]', 'text-white', 'shadow-[inset_0_0_20px_rgba(107,17,36,0.8)]');
+            tab.classList.remove('bg-brand-obsidian', 'text-white/60');
+            if (tabBadge) {
+              tabBadge.classList.add('bg-white/20', 'text-white');
+              tabBadge.classList.remove('bg-white/10', 'text-white/60');
+            }
+          } else {
+            tab.classList.remove('active-tab', 'bg-[#4A0D1B]', 'text-white', 'shadow-[inset_0_0_20px_rgba(107,17,36,0.8)]');
+            tab.classList.add('bg-brand-obsidian', 'text-white/60');
+            if (tabBadge) {
+              tabBadge.classList.remove('bg-white/20', 'text-white');
+              tabBadge.classList.add('bg-white/10', 'text-white/60');
+            }
+          }
+        });
+
+        // Smooth transition for portfolio groups
+        workSections.forEach((section) => {
+          const category = section.getAttribute('data-category');
+          const matches = filterCategory === 'all' || category === filterCategory;
+
+          if (matches) {
+            section.style.display = 'block';
+            // Slight tick to allow display block before opacity fade-in
+            setTimeout(() => {
+              section.classList.remove('fade-out');
+              section.classList.add('fade-in');
+            }, 10);
+          } else {
+            section.classList.remove('fade-in');
+            section.classList.add('fade-out');
+            setTimeout(() => {
+              if (section.classList.contains('fade-out')) {
+                section.style.display = 'none';
+              }
+            }, 250);
+          }
+        });
+      };
+
+      // Attach click events to filter tab buttons
+      filterTabs.forEach((tab) => {
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetFilter = tab.getAttribute('data-filter');
+          filterPortfolio(targetFilter);
+        });
+      });
+
+      // 2. Sound Toggle Buttons
+      toggleCardAudio = function(event, btn) {
+        event.stopPropagation();
+        const currentState = btn.getAttribute('data-state');
+        const soundIcon = btn.querySelector('.sound-icon');
+        const soundText = btn.querySelector('.sound-text');
+
+        if (currentState === 'muted') {
+          btn.setAttribute('data-state', 'unmuted');
+          if (soundIcon) soundIcon.textContent = '🔊';
+          if (soundText) soundText.textContent = 'Aktif';
+          btn.classList.add('bg-[#6B1124]', 'text-white');
+          btn.classList.remove('bg-black/70');
+        } else {
+          btn.setAttribute('data-state', 'muted');
+          if (soundIcon) soundIcon.textContent = '🔇';
+          if (soundText) soundText.textContent = 'Mati';
+          btn.classList.remove('bg-[#6B1124]');
+          btn.classList.add('bg-black/70');
+        }
+      };
+
+      const soundButtons = document.querySelectorAll('.sound-toggle-btn');
+      soundButtons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          toggleCardAudio(e, btn);
+        });
+      });
+
+      // 3. Video Modal Lightbox & YouTube Embed Player
+      const modal = document.getElementById('video-modal');
+      const modalContainer = document.getElementById('modal-container');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+
+      const modalTitle = document.getElementById('modal-title');
+      const modalCategory = document.getElementById('modal-category');
+      const modalClient = document.getElementById('modal-client');
+      const modalMetric = document.getElementById('modal-metric');
+      const modalDesc = document.getElementById('modal-desc');
+      const modalImagePreview = document.getElementById('modal-image-preview');
+      const modalPlayerWrapper = document.getElementById('modal-player-wrapper');
+      const modalYoutubeIframe = document.getElementById('modal-youtube-iframe');
+      const modalFallbackPreview = document.getElementById('modal-fallback-preview');
+
+      function extractYouTubeInfo(input) {
+        if (!input) return { id: null, isShorts: false };
+        const trimmed = input.trim();
+        const isShorts = trimmed.includes('/shorts/');
+        if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) {
+          return { id: trimmed, isShorts: false };
+        }
+        const patterns = [
+          /(?:youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/,
+          /(?:youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/,
+          /(?:youtu\.be\/)([a-zA-Z0-9_-]{11})/,
+          /(?:youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+          /[?&]v=([a-zA-Z0-9_-]{11})/
+        ];
+        for (const regex of patterns) {
+          const match = trimmed.match(regex);
+          if (match && match[1]) {
+            return { id: match[1], isShorts };
+          }
+        }
+        return { id: null, isShorts: false };
+      }
+
+      openReelPlayer = function(cardElement) {
+        const title = cardElement.getAttribute('data-title') || 'Karya Unggulan';
+        const client = cardElement.getAttribute('data-client') || 'Studio Yusuf';
+        const category = cardElement.getAttribute('data-category') || 'Produksi';
+        const metric = cardElement.getAttribute('data-metric') || 'Unggulan';
+        const desc = cardElement.getAttribute('data-desc') || '';
+        const poster = cardElement.getAttribute('data-poster') || '';
+        const youtubeUrl = cardElement.getAttribute('data-youtube') || '';
+        const aspectAttr = cardElement.getAttribute('data-aspect') || '';
+
+        if (modalTitle) modalTitle.textContent = title;
+        if (modalClient) modalClient.textContent = `Klien: ${client}`;
+        if (modalCategory) modalCategory.textContent = category;
+        if (modalMetric) modalMetric.textContent = metric;
+        if (modalDesc) modalDesc.textContent = desc;
+        if (poster && modalImagePreview) modalImagePreview.src = poster;
+
+        const { id, isShorts } = extractYouTubeInfo(youtubeUrl);
+        const isVertical = aspectAttr === '9:16' || (!aspectAttr && isShorts);
+
+        if (modalPlayerWrapper) {
+          modalPlayerWrapper.classList.remove('aspect-video', 'aspect-[9/16]', 'max-w-[340px]', 'w-full');
+          if (isVertical) {
+            modalPlayerWrapper.classList.add('aspect-[9/16]', 'max-w-[340px]');
+          } else {
+            modalPlayerWrapper.classList.add('aspect-video', 'w-full');
+          }
+        }
+
+        if (id && modalYoutubeIframe) {
+          modalYoutubeIframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+          modalYoutubeIframe.classList.remove('hidden');
+          if (modalFallbackPreview) modalFallbackPreview.classList.add('hidden');
+        } else {
+          if (modalYoutubeIframe) {
+            modalYoutubeIframe.src = '';
+            modalYoutubeIframe.classList.add('hidden');
+          }
+          if (modalFallbackPreview) modalFallbackPreview.classList.remove('hidden');
+        }
+
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modalContainer.classList.remove('scale-95');
+        modalContainer.classList.add('scale-100');
+        document.body.style.overflow = 'hidden';
+      };
+
+      closeModal = function() {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modalContainer.classList.remove('scale-100');
+        modalContainer.classList.add('scale-95');
+        document.body.style.overflow = '';
+        if (modalYoutubeIframe) {
+          modalYoutubeIframe.src = '';
+        }
+      };
+
+      if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeModal);
+      }
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+</body></html>
