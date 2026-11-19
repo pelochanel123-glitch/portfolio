@@ -163,33 +163,28 @@ Unduh Resume (PDF)
 </div></div>
 <!-- Reel Previews Row (Hero Cards) -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4" data-purpose="hero-featured-cards">
-<!-- Card 1: Photography -->
-<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('photo')">
-<img alt="Fotografi Produk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0omY2ikPcOnaBRUZHMwOo1KMEDLQdU4WIjkxnSum4RyvdPqf8QEWz0TTquYqjeYtlI1MuWlv7-ISG-lrNipz8v5GxRdhnvhQQl-UftVPv4afJqo1opJ0o2pe4ilOHGrz15crSES_XtY8Q_EABquVRhL9UF6gxnb2bucbDGmMa8mjDdGhQuwDyK2_Alb4VL06xCvRR-hlKRI-AIt5TjjmNy-1VTcqTXDXUvQ4kcw_G">
+<!-- Card 1: AI Photography -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('photo'); document.getElementById('selected-work').scrollIntoView({behavior:'smooth'});">
+<img alt="Fotografi AI dan Generatif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/ai-photos/ai-02.jpg">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 <div class="absolute bottom-4 left-5 right-5 flex justify-between items-center text-xs font-bold uppercase tracking-wider text-white"><span class="">FRAME / Fotografi AI &amp; Generatif</span>
 <span class="text-white/60 group-hover:text-white transition-colors">Lihat ↗</span></div>
 </div>
-<!-- Card 2: Video Editing (With sound toggle indicator) -->
-<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('video')">
-<img alt="Editing Motion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB15sFvOF_O4y45c4EagvG_aJzuIuFJbN9aMZsV-ChSGwc3RGxVjL1pLlgQFRWsDWS1OMpIQB0fQU_bL6UmXKxA1Zl4li3SCIPkin9vcnIbfBlM0q8dvbN9zX9vuZZmt-qT5SXoRtUoSmnK9Hyg40nnLVsTUfo1pHcWNTN6AURZLylqP3FbiyqjntBEheBvxp_ATpZp-Kv0SiWMrF8VCcftUZrucSchUdz_GU4ln8jq">
+<!-- Card 2: Video Editing -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('video'); document.getElementById('selected-work').scrollIntoView({behavior:'smooth'});">
+<img alt="Editing Video dan Komersial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://i.ytimg.com/vi/ku7W-lfj7rM/maxresdefault.jpg">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<!-- Interactive Sound Badge -->
-<button aria-label="Alihkan Suara" class="sound-toggle-btn absolute top-4 right-4 z-10 px-3 py-1 bg-black/60 backdrop-blur-md rounded-full text-[11px] font-semibold tracking-wide text-white border border-white/20 flex items-center gap-1.5 hover:bg-black/80" data-state="muted">
-<span class="sound-icon">🔇</span>
-<span class="sound-text">Suara mati</span>
-</button>
 <div class="absolute bottom-4 left-5 right-5 flex justify-between items-center text-xs font-bold uppercase tracking-wider text-white">
-<span class="">MOTION / Editing video</span>
+<span class="">MOTION / Video Panjang &amp; Iklan</span>
 <span class="text-white/60 group-hover:text-white transition-colors">Putar ↗</span>
 </div>
 </div>
-<!-- Card 3: Artful Details -->
-<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('design')">
-<img alt="Detail Artistik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe8OdmnH55gC_xjPkhLpNss005YUp05Up-_dgD_CdjgJo_t8n2-oCAn3oigrfnQiNZ9ELv5HTDqf4e9OJtd1HGrwjsJD-Zx3mNhaYbQDMxdvtXFImXXJkKXnycVSwXUXh4SaE27YoTDxfb1yRls-aU4etdk2ah8ISlVL7ojs_syOoj1x48yszvPwcdhXCDlZqaGZWb5lrM7qVjSNDVmFBlhWguSkvSXOHbqZUY-VPC">
+<!-- Card 3: Brand & Commercial Visuals -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[16/10] bg-brand-surface shadow-2xl border border-white/20 hover:border-white transition-all cursor-pointer" onclick="filterPortfolio('design'); document.getElementById('selected-work').scrollIntoView({behavior:'smooth'});">
+<img alt="Visual Komersial dan Desain Brand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/ai-photos/ai-13.jpg">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 <div class="absolute bottom-4 left-5 right-5 flex justify-between items-center text-xs font-bold uppercase tracking-wider text-white">
-<span class="">FEEL / Detail artistik</span>
+<span class="">FEEL / Visual Brand &amp; Komersial</span>
 <span class="text-white/60 group-hover:text-white transition-colors">Jelajahi ↗</span>
 </div>
 </div>
@@ -212,44 +207,36 @@ Unduh Resume (PDF)
 </h2>
 </div>
 <p class="text-white/60 max-w-sm mt-6 md:mt-0 text-sm leading-relaxed">
-            Produksi terkurasi mencakup format video pendek, fotografi produk komersial, dan sistem visual terpadu.
+            Produksi terkurasi mencakup video komersial &amp; company profile, fotografi AI generatif untuk digital asset, dan sistem visual brand.
           </p></div>
 <!-- Interactive Category Switcher Tabs -->
-<div class="flex overflow-x-auto lg:grid lg:grid-cols-5 border border-brand-border rounded-xl mb-14 bg-brand-obsidian divide-x divide-white/10 scrollbar-none select-none" data-purpose="work-filter-tabs" id="portfolio-filter-container">
+<div class="flex overflow-x-auto lg:grid lg:grid-cols-4 border border-brand-border rounded-xl mb-14 bg-brand-obsidian divide-x divide-white/10 scrollbar-none select-none" data-purpose="work-filter-tabs" id="portfolio-filter-container">
 <!-- Filter 0: All Works -->
-<button class="filter-tab-btn active-tab shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-5 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-[#4A0D1B] text-white shadow-[inset_0_0_20px_rgba(107,17,36,0.8)] flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="all">
+<button class="filter-tab-btn active-tab shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-[#4A0D1B] text-white shadow-[inset_0_0_20px_rgba(107,17,36,0.8)] flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="all">
 <span class="flex items-center gap-2">
 <span class="text-xs text-white/40">✱</span>
 <span class="tab-label font-bold">Semua Karya</span>
 </span>
-<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/20 text-white font-mono">Semua</span>
+<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/20 text-white font-mono">26+ karya</span>
 </button>
 <!-- Filter 1: Long-form Video -->
-<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-5 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="video">
+<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="video">
 <span class="flex items-center gap-2">
 <span class="text-xs text-white/40">01</span>
 <span class="tab-label">Video Panjang</span>
 </span>
 <span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">5 video</span>
 </button>
-<!-- Filter 2: Reels & TikTok -->
-<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-5 text-xs sm:text-sm font-semibold tracking-wide border-b lg:border-b-0 border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="reels">
-<span class="flex items-center gap-2">
+<!-- Filter 2: Photography & AI Visual -->
+<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="photo"><span class="flex items-center gap-2">
 <span class="text-xs text-white/40">02</span>
-<span class="tab-label">Reels &amp; TikTok</span>
+<span class="tab-label">Fotografi &amp; AI Visual</span>
 </span>
-<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">9:16</span>
-</button>
-<!-- Filter 3: Photography & AI Visual -->
-<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-5 text-xs sm:text-sm font-semibold tracking-wide border-brand-border bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="photo"><span class="flex items-center gap-2">
-<span class="text-xs text-white/40">03</span>
-<span class="tab-label">AI Visual</span>
-</span>
-<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">Foto/AI</span></button>
-<!-- Filter 4: Brand Design -->
-<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-5 text-xs sm:text-sm font-semibold tracking-wide bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="design">
+<span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">21 karya</span></button>
+<!-- Filter 3: Brand Design -->
+<button class="filter-tab-btn shrink-0 flex-1 py-3.5 sm:py-4 px-4 sm:px-6 text-xs sm:text-sm font-semibold tracking-wide bg-brand-obsidian text-white/60 hover:text-white hover:bg-brand-surface flex items-center justify-between gap-2 transition-all duration-300 whitespace-nowrap" data-filter="design">
 <span class="flex items-center gap-2">
-<span class="text-xs text-white/40">04</span>
+<span class="text-xs text-white/40">03</span>
 <span class="tab-label">Desain Brand</span>
 </span>
 <span class="tab-badge text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/60 font-mono">Brand</span>
@@ -409,69 +396,261 @@ Unduh Resume (PDF)
 </div>
 </div>
 </div>
-<!-- Section 02: Short-Form Reels & TikTok Grid (Vertical 9:16) -->
-<div class="works-group block transition-all duration-300 mb-16 pt-12 border-t border-brand-border" data-category="reels" id="reels-section-group">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-8">
-<h3 class="text-2xl font-bold tracking-tight text-white flex flex-wrap items-center gap-3">
-<span class="">Video Pendek — Reels &amp; TikTok</span>
-<span class="text-xs px-2.5 py-0.5 rounded-full bg-[#6B1124] text-white font-mono font-medium">Vertikal 9:16</span>
-</h3>
-<span class="text-xs font-mono uppercase tracking-widest text-white/50">02 / FORMAT VERTIKAL</span>
-</div>
-<div class="rounded-2xl border border-dashed border-white/20 bg-brand-surface/60 p-8 sm:p-10 text-center" data-purpose="reels-grid">
-<p class="text-sm font-semibold text-white mb-1">Koleksi Reels &amp; TikTok (9:16) Siap Ditambahkan</p>
-<p class="text-xs text-white/50 max-w-md mx-auto">Bagian ini disiapkan khusus untuk video vertikal pendek (Instagram Reels, TikTok, dan YouTube Shorts) terpisah dari video panjang 16:9 di atas.</p>
-</div>
-</div>
-<!-- Photography Showcase Grid -->
+<!-- Photography & AI Visual Showcase Grid -->
 <div class="works-group block transition-all duration-300 mb-16 pt-12 border-t border-brand-border" data-category="photo" id="photo-section-group">
-<div class="flex items-center justify-between mb-8"><h3 class="text-2xl font-bold tracking-tight text-white flex items-center gap-3">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="text-2xl font-bold tracking-tight text-white flex flex-wrap items-center gap-3">
 <span class="">Fotografi AI &amp; Generative Imagery</span>
-<span class="text-xs px-2.5 py-0.5 rounded-full bg-[#6B1124] text-white font-mono font-medium">AI Visual / Foto</span>
+<span class="text-xs px-2.5 py-0.5 rounded-full bg-[#6B1124] text-white font-mono font-medium">AI Visual · 21 Karya</span>
 </h3>
-<span class="text-xs font-mono uppercase tracking-widest text-white/50">02 / 13 KARYA</span></div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-purpose="photography-grid"><!-- Photo Card 1: Luxury Perfume -->
-<div class="group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-white/40 transition-all cursor-pointer">
-<div class="aspect-[4/3] overflow-hidden relative">
-<img alt="Aura Botanique — Luxury Perfume" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3WlR8wOFJk_ygpQSoqGQSRHsHH8k9eYRCe3ExUMTgmh0G8b_aLXqyScg_4jTLZCY_f05KsZjH34uN4vaYP_GGuwRsrzMYczBl20t7iZqiP8ajvdX8SgZqomNCqjI4M2KOZb1_-XZzTNmGrFddMLksKGP_eTqxuRlmly7imXAL4BheJGoGBIHqwdJlVLM7L67JgnX8V9md8BsqmPMi-sSU3J_K3-eW9Z7E5BTE0dZi">
-<div class="absolute top-3 right-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/20">Midjourney / ComfyUI</div>
+<a class="inline-flex items-center gap-2 text-xs font-semibold text-white/80 hover:text-white px-4 py-2 rounded-full border border-white/20 hover:border-white/50 bg-brand-surface transition-all self-start md:self-auto" href="https://www.behance.net/gallery/257755513/Ai-Image-Generate-For-Digital-Creative-Asset-V2" rel="noopener noreferrer" target="_blank">
+<span>Lihat Proyek Lengkap di Behance</span>
+<span>↗</span>
+</a>
 </div>
-<div class="p-5 flex justify-between items-center bg-brand-surface">
-<div>
-<h4 class="text-white font-bold text-base group-hover:text-brand-blueLight transition-colors">Aura Botanique — Luxury Perfume</h4>
-<p class="text-xs text-white/50 mt-0.5">Generative AI Product Commercial • Prompting &amp; Art Direction</p>
+<!-- AI Sub-category Filter Pills -->
+<div class="flex flex-wrap items-center gap-2 mb-8" id="ai-subfilter-bar">
+<button class="ai-subfilter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#6B1124] text-white border border-white/20 transition-all" data-subcat="all" onclick="filterAiSubcat('all', this)">Semua (21)</button>
+<button class="ai-subfilter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-surface text-white/65 hover:text-white border border-white/10 transition-all" data-subcat="fnb" onclick="filterAiSubcat('fnb', this)">F&amp;B Advertising (3)</button>
+<button class="ai-subfilter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-surface text-white/65 hover:text-white border border-white/10 transition-all" data-subcat="agri" onclick="filterAiSubcat('agri', this)">Agritech AI (3)</button>
+<button class="ai-subfilter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-surface text-white/65 hover:text-white border border-white/10 transition-all" data-subcat="influencer" onclick="filterAiSubcat('influencer', this)">AI Influencer (3)</button>
+<button class="ai-subfilter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-surface text-white/65 hover:text-white border border-white/10 transition-all" data-subcat="skincare" onclick="filterAiSubcat('skincare', this)">Skincare Commercial (9)</button>
+<button class="ai-subfilter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-surface text-white/65 hover:text-white border border-white/10 transition-all" data-subcat="fashion" onclick="filterAiSubcat('fashion', this)">Fashion Lookbook (3)</button>
 </div>
-<span class="text-xs font-mono text-white/40">2024</span>
-</div>
-</div>
-<!-- Photo Card 2: Conceptual Architecture -->
-<div class="group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-white/40 transition-all cursor-pointer">
-<div class="aspect-[4/3] overflow-hidden relative">
-<img alt="Oasis Pavilion — Conceptual Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHrh5FTILslWhEHnXfJBDvKWjUXzT2owRaLatSDCrKdyRa3te0L-E1inOGn3Bi-VuewuFy9zGoOsSpwgdNgxAJjPfvAHzyo7r3xvmwS-sEorc9L_ShEbjS1Yd9I-u6P2ccoak9bdNkXAYfEEcMnrhdxQEBqvhPl-SSpKlYvfxsEEYAY7pPdaNQbufrUxJAeygr-Sxro9i_5G05fIHhNV9RA3kh1QpS4s9un-wq_CsB">
-<div class="absolute top-3 right-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/20">Generative ArchViz</div>
-</div>
-<div class="p-5 flex justify-between items-center bg-brand-surface">
-<div>
-<h4 class="text-white font-bold text-base group-hover:text-brand-blueLight transition-colors">Oasis Pavilion — Conceptual Architecture</h4>
-<p class="text-xs text-white/50 mt-0.5">Surreal Editorial &amp; Environmental Visual</p>
-</div>
-<span class="text-xs font-mono text-white/40">2024</span>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5" data-purpose="photography-grid">
+<div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="0" data-ai-subcat="fnb" data-desc="Fotografi makanan AI sinematik dengan efek remah dinamis dan pencahayaan hangat untuk kampanye kuliner." data-src="assets/ai-photos/ai-02.jpg" data-tag="F&amp;B Advertising" data-title="Ayam Goreng Kremes — Dynamic Splash" onclick="openPhotoLightbox(0)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Ayam Goreng Kremes — Dynamic Splash" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-02.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">F&amp;B Advertising</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Ayam Goreng Kremes — Dynamic Splash</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Fotografi makanan AI sinematik dengan efek remah dinamis dan pencahayaan hangat untuk kampanye kuliner.</p>
 </div>
 </div>
-<!-- Photo Card 3: Beverage Fluid Simulation -->
-<div class="group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-white/40 transition-all cursor-pointer">
-<div class="aspect-[4/3] overflow-hidden relative">
-<img alt="Matcha Splash — Beverage Commercial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFJSq0wsuFtbh4gW_LRaqT9Clj54i2MHzeGFptWUMsu6TsuKaWX7TSMt-At32BN0ZMqZuukjKi2BflRPS4mCHuGNjWGDUiDTRdwinR7hsD2unaTstT_kXzpGwmMn4S6LtJPiRA5p_mSxD8-HHQ3VO7jp2nttKBcfB4NAyM60lTwYDYZfTNl5PDYJ5wj2zHFuiRJo-Mr0KgvbuYFfc_Q45ZXN8C5PRf7xSRkl-nQLO">
-<div class="absolute top-3 right-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/20">Commercial AI</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="1" data-ai-subcat="fnb" data-desc="Konsep visual flatlay menu tradisional untuk promosi restoran dan materi iklan digital." data-src="assets/ai-photos/ai-01.jpg" data-tag="F&amp;B Advertising" data-title="Food Advertising — Flatlay &amp; Concept" onclick="openPhotoLightbox(1)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Food Advertising — Flatlay &amp; Concept" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-01.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">F&amp;B Advertising</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Food Advertising — Flatlay &amp; Concept</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Konsep visual flatlay menu tradisional untuk promosi restoran dan materi iklan digital.</p>
 </div>
-<div class="p-5 flex justify-between items-center bg-brand-surface">
-<div>
-<h4 class="text-white font-bold text-base group-hover:text-brand-blueLight transition-colors">Matcha Splash — Beverage Commercial</h4>
-<p class="text-xs text-white/50 mt-0.5">High-Speed Fluid AI Simulation &amp; Retouching</p>
 </div>
-<span class="text-xs font-mono text-white/40">2024</span>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="2" data-ai-subcat="fnb" data-desc="Seri fotografi editorial kuliner dengan penekanan tekstur renyah dan komposisi menggugah selera." data-src="assets/ai-photos/ai-03.jpg" data-tag="F&amp;B Advertising" data-title="Culinary Editorial — Crispy Chicken Series" onclick="openPhotoLightbox(2)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Culinary Editorial — Crispy Chicken Series" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-03.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">F&amp;B Advertising</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Culinary Editorial — Crispy Chicken Series</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Seri fotografi editorial kuliner dengan penekanan tekstur renyah dan komposisi menggugah selera.</p>
 </div>
-</div></div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="3" data-ai-subcat="agri" data-desc="Visual komersial pertanian modern dengan pencahayaan alami dan depth-of-field bersih." data-src="assets/ai-photos/ai-04.jpg" data-tag="Agritech AI" data-title="Smart Farming — Bibit Cabai Mulsa" onclick="openPhotoLightbox(3)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Smart Farming — Bibit Cabai Mulsa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-04.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Agritech AI</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Smart Farming — Bibit Cabai Mulsa</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Visual komersial pertanian modern dengan pencahayaan alami dan depth-of-field bersih.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="4" data-ai-subcat="agri" data-desc="Konsep visual untuk artikel, edukasi agritech, dan kampanye pertanian modern." data-src="assets/ai-photos/ai-05.jpg" data-tag="Agritech AI" data-title="Agritech Campaign — Lahan Pertanian Modern" onclick="openPhotoLightbox(4)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Agritech Campaign — Lahan Pertanian Modern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-05.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Agritech AI</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Agritech Campaign — Lahan Pertanian Modern</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Konsep visual untuk artikel, edukasi agritech, dan kampanye pertanian modern.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="5" data-ai-subcat="agri" data-desc="Kolase visual aktivitas budidaya dan kesehatan tanaman untuk materi pemasaran pertanian." data-src="assets/ai-photos/ai-06.jpg" data-tag="Agritech AI" data-title="Dokumentasi Pertanian — Editorial Collage" onclick="openPhotoLightbox(5)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Dokumentasi Pertanian — Editorial Collage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-06.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Agritech AI</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Dokumentasi Pertanian — Editorial Collage</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Kolase visual aktivitas budidaya dan kesehatan tanaman untuk materi pemasaran pertanian.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="6" data-ai-subcat="influencer" data-desc="Model AI konsisten untuk kampanye produk serum kecantikan dan iklan media sosial." data-src="assets/ai-photos/ai-07.jpg" data-tag="AI Influencer" data-title="AI Beauty Influencer — Serum Portrait" onclick="openPhotoLightbox(6)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="AI Beauty Influencer — Serum Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-07.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">AI Influencer</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">AI Beauty Influencer — Serum Portrait</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Model AI konsisten untuk kampanye produk serum kecantikan dan iklan media sosial.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="7" data-ai-subcat="influencer" data-desc="Eksplorasi konsistensi karakter AI dalam berbagai gaya busana, pencahayaan, dan lokasi." data-src="assets/ai-photos/ai-08.jpg" data-tag="AI Influencer" data-title="Consistent AI Character — Lifestyle Grid" onclick="openPhotoLightbox(7)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Consistent AI Character — Lifestyle Grid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-08.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">AI Influencer</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Consistent AI Character — Lifestyle Grid</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Eksplorasi konsistensi karakter AI dalam berbagai gaya busana, pencahayaan, dan lokasi.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="8" data-ai-subcat="influencer" data-desc="Konsep persona AI influencer untuk kolaborasi brand skincare dan gaya hidup." data-src="assets/ai-photos/ai-09.jpg" data-tag="AI Influencer" data-title="AI Influencer Marketing — Beauty Series" onclick="openPhotoLightbox(8)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="AI Influencer Marketing — Beauty Series" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-09.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">AI Influencer</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">AI Influencer Marketing — Beauty Series</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Konsep persona AI influencer untuk kolaborasi brand skincare dan gaya hidup.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="9" data-ai-subcat="skincare" data-desc="Visual kampanye produk skincare Mineral Botanica dengan tone kulit natural dan pencahayaan studio lembut." data-src="assets/ai-photos/ai-10.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Beauty Portrait I" onclick="openPhotoLightbox(9)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Beauty Portrait I" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-10.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Beauty Portrait I</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Visual kampanye produk skincare Mineral Botanica dengan tone kulit natural dan pencahayaan studio lembut.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="10" data-ai-subcat="skincare" data-desc="Potret editorial segar menampilkan produk kemasan pink untuk kampanye media sosial." data-src="assets/ai-photos/ai-11.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Fresh Glow Editorial" onclick="openPhotoLightbox(10)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Fresh Glow Editorial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-11.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Fresh Glow Editorial</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Potret editorial segar menampilkan produk kemasan pink untuk kampanye media sosial.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="11" data-ai-subcat="skincare" data-desc="Close-up produk di tangan dengan pencahayaan studio dramatis untuk iklan digital." data-src="assets/ai-photos/ai-12.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Hand-Held Product Shot" onclick="openPhotoLightbox(11)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Hand-Held Product Shot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-12.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Hand-Held Product Shot</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Close-up produk di tangan dengan pencahayaan studio dramatis untuk iklan digital.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="12" data-ai-subcat="skincare" data-desc="Simulasi cipratan tekstur krim dinamis untuk menonjolkan kelembapan produk skincare." data-src="assets/ai-photos/ai-13.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Creamy Splash Studio" onclick="openPhotoLightbox(12)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Creamy Splash Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-13.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Creamy Splash Studio</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Simulasi cipratan tekstur krim dinamis untuk menonjolkan kelembapan produk skincare.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="13" data-ai-subcat="skincare" data-desc="Komposisi produk bertema bahan alami daun Centella dengan nuansa bersih dan segar." data-src="assets/ai-photos/ai-14.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Botanical Centella" onclick="openPhotoLightbox(13)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Botanical Centella" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-14.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Botanical Centella</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Komposisi produk bertema bahan alami daun Centella dengan nuansa bersih dan segar.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="14" data-ai-subcat="skincare" data-desc="Visual komersial mewah dengan elemen kaca transparan dan refleksi cahaya pink." data-src="assets/ai-photos/ai-15.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Glass Ribbon Studio" onclick="openPhotoLightbox(14)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Glass Ribbon Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-15.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Glass Ribbon Studio</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Visual komersial mewah dengan elemen kaca transparan dan refleksi cahaya pink.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="15" data-ai-subcat="skincare" data-desc="Konsep hidrasi dengan efek riak air dan pencahayaan caustics untuk produk moisture barrier." data-src="assets/ai-photos/ai-16.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Water Ripple Commercial" onclick="openPhotoLightbox(15)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Water Ripple Commercial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-16.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Water Ripple Commercial</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Konsep hidrasi dengan efek riak air dan pencahayaan caustics untuk produk moisture barrier.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="16" data-ai-subcat="skincare" data-desc="Potret editorial dengan pencahayaan matahari alami yang menonjolkan tampilan kulit sehat." data-src="assets/ai-photos/ai-17.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Sunlight Portrait" onclick="openPhotoLightbox(16)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Sunlight Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-17.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Sunlight Portrait</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Potret editorial dengan pencahayaan matahari alami yang menonjolkan tampilan kulit sehat.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="17" data-ai-subcat="skincare" data-desc="Konsep gaya hidup kasual yang memperlihatkan kepraktisan produk untuk aktivitas harian." data-src="assets/ai-photos/ai-18.jpg" data-tag="Skincare Commercial" data-title="Mineral Botanica — Denim Pocket Lifestyle" onclick="openPhotoLightbox(17)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Mineral Botanica — Denim Pocket Lifestyle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-18.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Skincare Commercial</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Mineral Botanica — Denim Pocket Lifestyle</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Konsep gaya hidup kasual yang memperlihatkan kepraktisan produk untuk aktivitas harian.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="18" data-ai-subcat="fashion" data-desc="Visual lookbook fashion kasual outdoor dengan detail tekstur kain dan pencahayaan alami." data-src="assets/ai-photos/ai-19.jpg" data-tag="Fashion Lookbook" data-title="Fashion Lookbook — Olive Utility Set" onclick="openPhotoLightbox(18)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Fashion Lookbook — Olive Utility Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-19.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Fashion Lookbook</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Fashion Lookbook — Olive Utility Set</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Visual lookbook fashion kasual outdoor dengan detail tekstur kain dan pencahayaan alami.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="19" data-ai-subcat="fashion" data-desc="Gaya editorial streetwear modern dengan sudut pandang dinamis untuk katalog digital." data-src="assets/ai-photos/ai-20.jpg" data-tag="Fashion Lookbook" data-title="Fashion Lookbook — Streetwear Jacket" onclick="openPhotoLightbox(19)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Fashion Lookbook — Streetwear Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-20.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Fashion Lookbook</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Fashion Lookbook — Streetwear Jacket</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Gaya editorial streetwear modern dengan sudut pandang dinamis untuk katalog digital.</p>
+</div>
+</div>
+</div><div class="ai-photo-card group relative rounded-2xl overflow-hidden bg-brand-surface border border-white/10 hover:border-[#6B1124] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-[0_0_24px_rgba(107,17,36,0.4)]" data-ai-index="20" data-ai-subcat="fashion" data-desc="Potret lookbook indoor bernuansa hangat untuk promosi koleksi pakaian kasual." data-src="assets/ai-photos/ai-21.jpg" data-tag="Fashion Lookbook" data-title="Fashion Lookbook — Striped Rugby Polo" onclick="openPhotoLightbox(20)">
+<div class="aspect-[4/5] overflow-hidden relative bg-brand-obsidian">
+<img alt="Fashion Lookbook — Striped Rugby Polo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="assets/ai-photos/ai-21.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-70 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full text-[10px] font-mono text-white/90 border border-white/15">Fashion Lookbook</div>
+<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/80 group-hover:bg-[#6B1124] group-hover:text-white flex items-center justify-center text-xs transition-all">⤢</div>
+<div class="absolute bottom-3 left-3 right-3">
+<h4 class="text-white font-bold text-sm leading-snug line-clamp-1 group-hover:text-[#ff8da5] transition-colors">Fashion Lookbook — Striped Rugby Polo</h4>
+<p class="text-[11px] text-white/65 mt-0.5 line-clamp-1">Potret lookbook indoor bernuansa hangat untuk promosi koleksi pakaian kasual.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <!-- Brand Design Group -->
 <div class="works-group block transition-all duration-300 pt-12 border-t border-brand-border" data-category="design" id="design-section-group">
@@ -732,6 +911,31 @@ Unduh Resume / CV (PDF)
 </div>
 </div>
 <!-- END: InteractiveVideoModal -->
+<!-- BEGIN: ImageLightboxModal -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/92 backdrop-blur-xl opacity-0 pointer-events-none transition-opacity duration-300" id="photo-lightbox" role="dialog">
+<div class="relative w-full max-w-4xl bg-brand-surface border border-white/20 rounded-3xl p-4 sm:p-6 shadow-2xl transform scale-95 transition-transform duration-300" id="photo-lightbox-container" style="box-shadow: 0 0 50px rgba(107,17,36,0.35);">
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
+<div class="flex items-center gap-3 min-w-0">
+<span class="px-3 py-1 rounded-full bg-[#6B1124] text-white text-[10px] font-bold uppercase tracking-wider shrink-0" id="lightbox-tag">AI Visual</span>
+<span class="text-xs font-mono text-white/50 shrink-0" id="lightbox-counter">1 / 21</span>
+</div>
+<button aria-label="Tutup pratinjau foto" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#6B1124] text-white flex items-center justify-center transition-all font-bold border border-white/10 shrink-0" onclick="closePhotoLightbox()">✕</button>
+</div>
+<div class="relative flex items-center justify-center bg-black/70 rounded-2xl overflow-hidden border border-white/10">
+<button aria-label="Foto sebelumnya" class="absolute left-3 z-10 w-10 h-10 rounded-full bg-black/70 hover:bg-[#6B1124] text-white border border-white/20 flex items-center justify-center transition-all text-lg" onclick="stepPhotoLightbox(-1)">‹</button>
+<img alt="Pratinjau Karya AI" class="max-h-[68vh] w-auto object-contain mx-auto" id="lightbox-img" src="">
+<button aria-label="Foto berikutnya" class="absolute right-3 z-10 w-10 h-10 rounded-full bg-black/70 hover:bg-[#6B1124] text-white border border-white/20 flex items-center justify-center transition-all text-lg" onclick="stepPhotoLightbox(1)">›</button>
+</div>
+<div class="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div>
+<h3 class="text-lg sm:text-xl font-bold text-white font-display" id="lightbox-title">Judul Karya</h3>
+<p class="text-xs sm:text-sm text-white/65 mt-0.5" id="lightbox-desc"></p>
+</div>
+<a class="px-4 py-2 rounded-full bg-white/10 hover:bg-[#6B1124] text-white text-xs font-semibold border border-white/20 transition-all shrink-0 text-center" href="https://www.behance.net/gallery/257755513/Ai-Image-Generate-For-Digital-Creative-Asset-V2" rel="noopener noreferrer" target="_blank">Behance ↗</a>
+</div>
+</div>
+</div>
+<!-- END: ImageLightboxModal -->
 <!-- BEGIN: InteractiveScripts -->
 <script data-purpose="interactive-functionality">
     // Expose filter function globally
@@ -937,6 +1141,80 @@ Unduh Resume / CV (PDF)
 
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeModal();
+      });
+
+
+      // 4. AI Photo Sub-Category Filter & Fullscreen Lightbox
+      const aiCards = Array.from(document.querySelectorAll('.ai-photo-card'));
+      const photoLightbox = document.getElementById('photo-lightbox');
+      const photoLightboxContainer = document.getElementById('photo-lightbox-container');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDesc = document.getElementById('lightbox-desc');
+      const lightboxTag = document.getElementById('lightbox-tag');
+      const lightboxCounter = document.getElementById('lightbox-counter');
+      let currentPhotoIdx = 0;
+
+      window.filterAiSubcat = function(subcat, clickedBtn) {
+        document.querySelectorAll('.ai-subfilter-btn').forEach((b) => {
+          b.classList.remove('bg-[#6B1124]', 'text-white', 'border-white/20');
+          b.classList.add('bg-brand-surface', 'text-white/65', 'border-white/10');
+        });
+        if (clickedBtn) {
+          clickedBtn.classList.add('bg-[#6B1124]', 'text-white', 'border-white/20');
+          clickedBtn.classList.remove('bg-brand-surface', 'text-white/65', 'border-white/10');
+        }
+        aiCards.forEach((card) => {
+          const match = subcat === 'all' || card.getAttribute('data-ai-subcat') === subcat;
+          card.style.display = match ? 'block' : 'none';
+        });
+      };
+
+      function renderPhotoLightbox(idx) {
+        if (!aiCards.length) return;
+        currentPhotoIdx = (idx + aiCards.length) % aiCards.length;
+        const card = aiCards[currentPhotoIdx];
+        if (lightboxImg) lightboxImg.src = card.getAttribute('data-src') || '';
+        if (lightboxTitle) lightboxTitle.textContent = card.getAttribute('data-title') || '';
+        if (lightboxDesc) lightboxDesc.textContent = card.getAttribute('data-desc') || '';
+        if (lightboxTag) lightboxTag.textContent = card.getAttribute('data-tag') || 'AI Visual';
+        if (lightboxCounter) lightboxCounter.textContent = `${currentPhotoIdx + 1} / ${aiCards.length}`;
+      }
+
+      window.openPhotoLightbox = function(idx) {
+        renderPhotoLightbox(idx);
+        if (photoLightbox && photoLightboxContainer) {
+          photoLightbox.classList.remove('opacity-0', 'pointer-events-none');
+          photoLightboxContainer.classList.remove('scale-95');
+          photoLightboxContainer.classList.add('scale-100');
+          document.body.style.overflow = 'hidden';
+        }
+      };
+
+      window.closePhotoLightbox = function() {
+        if (photoLightbox && photoLightboxContainer) {
+          photoLightbox.classList.add('opacity-0', 'pointer-events-none');
+          photoLightboxContainer.classList.remove('scale-100');
+          photoLightboxContainer.classList.add('scale-95');
+          document.body.style.overflow = '';
+        }
+      };
+
+      window.stepPhotoLightbox = function(delta) {
+        renderPhotoLightbox(currentPhotoIdx + delta);
+      };
+
+      if (photoLightbox) {
+        photoLightbox.addEventListener('click', (e) => {
+          if (e.target === photoLightbox) window.closePhotoLightbox();
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (!photoLightbox || photoLightbox.classList.contains('pointer-events-none')) return;
+        if (e.key === 'Escape') window.closePhotoLightbox();
+        if (e.key === 'ArrowRight') window.stepPhotoLightbox(1);
+        if (e.key === 'ArrowLeft') window.stepPhotoLightbox(-1);
       });
 
     });
