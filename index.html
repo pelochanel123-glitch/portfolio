@@ -743,7 +743,7 @@ Unduh Resume (PDF)
 </div>
 <div class="lg:col-span-6 relative">
 <div class="relative rounded-3xl overflow-hidden border border-white/20 shadow-2xl aspect-[4/3]">
-<img alt="Ruang Kerja Kreatif dan Produksi Yusuf Al Fiansyah" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiWggyzXiRxOtChRfd3YP_ByRcl3EKVSJbszFBt_QtjYRKHmPXPtheHTVf-fGGEgUBrNQmzmlRdzhMQ_RK8xoxZXXxIY3LZ0vAmSUK1a05SkGWz0GEWfTbiVVtIyxylPqKikkOjanwDHbudEdvy_Y6eOlZ1dkVnGYM0iiBUq6N68csJmjnsY8PejZk8_e7tA14jv1fxobFiI86k99gX3qKSlCT7iq_mJd82iUlozJV">
+<img alt="Yusuf Al Fiansyah — Creative Designer &amp; Content Creator" class="w-full h-full object-cover object-center" loading="lazy" src="assets/profile-yusuf.jpg">
 <div class="absolute inset-0 bg-gradient-to-t from-brand-obsidian/90 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-xs text-white/90">
 <div class="flex items-center gap-2">
@@ -1192,21 +1192,6 @@ Unduh Resume / CV (PDF)
         });
       };
 
-      window.filterBrandSubcat = function(subcat, clickedBtn) {
-        document.querySelectorAll('.brand-subfilter-btn').forEach((b) => {
-          b.classList.remove('bg-[#6B1124]', 'text-white', 'border-white/20');
-          b.classList.add('bg-brand-surface', 'text-white/65', 'border-white/10');
-        });
-        if (clickedBtn) {
-          clickedBtn.classList.add('bg-[#6B1124]', 'text-white', 'border-white/20');
-          clickedBtn.classList.remove('bg-brand-surface', 'text-white/65', 'border-white/10');
-        }
-        brandCards.forEach((card) => {
-          const match = subcat === 'all' || card.getAttribute('data-brand-subcat') === subcat;
-          card.style.display = match ? 'block' : 'none';
-        });
-      };
-
       function renderPhotoLightbox(idx) {
         if (!activeLightboxCards.length) return;
         currentPhotoIdx = (idx + activeLightboxCards.length) % activeLightboxCards.length;
@@ -1221,18 +1206,6 @@ Unduh Resume / CV (PDF)
       window.openPhotoLightbox = function(idx) {
         activeLightboxCards = aiCards;
         if (lightboxBehanceLink) lightboxBehanceLink.href = 'https://www.behance.net/gallery/257755513/Ai-Image-Generate-For-Digital-Creative-Asset-V2';
-        renderPhotoLightbox(idx);
-        if (photoLightbox && photoLightboxContainer) {
-          photoLightbox.classList.remove('opacity-0', 'pointer-events-none');
-          photoLightboxContainer.classList.remove('scale-95');
-          photoLightboxContainer.classList.add('scale-100');
-          document.body.style.overflow = 'hidden';
-        }
-      };
-
-      window.openBrandLightbox = function(idx) {
-        activeLightboxCards = brandCards;
-        if (lightboxBehanceLink) lightboxBehanceLink.href = 'https://www.behance.net/gallery/200368733/PORTFOLIO-YUSUF';
         renderPhotoLightbox(idx);
         if (photoLightbox && photoLightboxContainer) {
           photoLightbox.classList.remove('opacity-0', 'pointer-events-none');
